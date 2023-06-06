@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Onde estudar</string>
+    <string name="Acessar">Acessar</string>
+    <string name="text_cadastro">Novo por aqui? Cadastre-se</string>
+    <string name="title_cadastro">Criar conta </string>
+    <string name="Termo">Li e concordo com os termos de uso.</string>
+    <string name="cadastrar"> Cadastrar</string>
+    <string name="home">Bem vindo Usuario</string>
+    <string name="deslogar">Deslogar</string>
+</resources>

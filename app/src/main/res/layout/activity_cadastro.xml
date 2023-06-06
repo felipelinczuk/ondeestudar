@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Cadastro">
+
+
+    <TextView
+        android:id="@+id/tile_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_cadastro"
+        android:textSize="45sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/editText_nome"
+        style="@style/Edit_Text"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/black"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/lilasclaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tile_conta" />
+
+    <EditText
+        android:id="@+id/editText_dataNasc"
+        style="@style/Edit_Text"
+        android:layout_marginTop="12dp"
+        android:hint="Data de nascimento"
+        android:textColor="@color/black"
+        android:inputType="date"
+        android:textColorHint="@color/lilasclaro"
+        app:layout_constraintEnd_toEndOf="@id/editText_nome"
+        app:layout_constraintStart_toStartOf="@id/editText_nome"
+        app:layout_constraintTop_toBottomOf="@id/editText_nome" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        style="@style/Edit_Text"
+        android:layout_marginTop="12dp"
+        android:hint="E-mail"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/lilasclaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_dataNasc" />
+    <EditText
+        android:id="@+id/editText_password"
+        style="@style/Edit_Text"
+        android:layout_marginTop="12dp"
+        android:hint="Senha"
+        android:textColor="@color/black"
+        android:inputType="numberPassword"
+        android:textColorHint="@color/lilasclaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_email" />
+
+    <EditText
+        android:id="@+id/editText_endereco"
+        style="@style/Edit_Text"
+        android:layout_marginTop="12dp"
+        android:hint="Endereço"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/lilasclaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_password"  />
+
+    <TextView
+        android:id="@+id/termo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/Termo"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_endereco" />
+
+    <CheckBox
+        android:id="@+id/Termos_de_uso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_endereco" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_cadastrar"
+        style="@style/Button"
+        android:layout_width="324dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/cadastrar"
+       android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/termo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
